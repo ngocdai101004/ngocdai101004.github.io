@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <style>
+            body {
+              background-color: rgb(140, 250, 180,0.1);
+              height: 10000px;
+            }
+            .page-name {
+              position: fixed;
+              top: 0;
+              margin-left: 40%;
+              margin-bottom: 5vh;
+              font-weight: bolder;
+              font-size: 70px;
+              flex-grow: 1;
+              background-image: linear-gradient(to top ,rgb(0, 0, 0) 5% ,rgb(255, 0, 0) 95%);
+              display: inline-block;
+              color: transparent;
+              -webkit-background-clip: text;
+              background-clip: text;
+            }
+
+            .card-list {
+              display: flex;
+              flex-wrap: wrap;
+              margin-left: -30px;
+              margin-top: 80px;
+              flex: 1;
+            }
+            .card {
+              border-radius: 20px;
+              flex-direction: column;
+              border: solid black 0.5px;
+              overflow: hidden;
+              background-color: white;
+              box-shadow: rgba(63, 76, 69,0.2) 0px 7px 29px 0px;
+              width: calc(20% - 32px);
+              margin-left: 30px;
+              margin-bottom: 30px;
+            }
+            .card-img {
+              max-width:100%;
+              width: auto;
+              height: 200px;
+              object-fit: cover;
+              padding-left: 30px;
+              flex-shrink: 0;
+
+            }
+            .card-content {
+              padding: 10px;
+              background-color: aqua;
+              height: calc(100%-200px);
+              flex: 1;
+            }
+            .pokemon-name {
+              border-radius: 30px;
+              font-size: 25px;
+              font-weight: 600;
+              width: 100%;
+              color: black;
+              background-color: bisque;
+              cursor: pointer;
+            }
+            .pokemon-name:hover {
+              background-color: rgb(236, 187, 128);
+            }
+            .pokemon-name:active {
+              background-color: rgb(235, 141, 0);
+            }
+            .type {
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: space-evenly;
+            }
+            .type-sub {
+              display: flexbox;
+              align-items: center;
+            }
+            .pokemon-type-avt {
+              width: 30px;
+              height: 30px;
+              border-radius: 100rem;
+              align-items: center;
+              padding: 5px;
+              flex-shrink: 0;
+            }
+            .pokemon-inf {
+              display: block;
+              padding-top: 1px;
+              padding-left: 10px;
+              border: 1px solid black;
+              margin: 1px;
+              align-items: center;
+              border-radius: 30px;
+              background-color: blanchedalmond;
+            }
+            .state-more-inf {
+              margin-top: 30px;
+              border-top: 1px solid black;
+              background-color: rgb(255, 183, 2);
+            }
+            .state-more-inf p {
+              text-align: center;
+              font-weight: 400;
+              margin: 0%;
+            }
+
+    
+        </style>
+    </head>
+    <body>
+        <!--Page's Name -->
+        <div class="page-name">
+          pokemon
+        </div>
+        
+        <!-- list of cards -->
+        <div class="card-list"> 
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/bulbasaur.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Bulbasaur
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_176677_e.png?v=-62169983925"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+               <div class="type-sub">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/768px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?20200511082025"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">                  
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Seed Pokemon</h3>
+               <h4 class="height">Height: 0.7 m (2′04″)</h4>
+               <h4 class="weight">Weight: 6.9 kg (15.2 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/charmander" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/charmander.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/charmander" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Charmander
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/3083931-8746743194-flat%2C.jpg"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Lizard Pokemon</h3>
+               <h4 class="height">Height:	0.6 m (2′00″)
+                 </h4>
+               <h4 class="weight"> Weight: 8.5 kg (18.7 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/charmander" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/squirtle" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/squirtle.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/squirtle" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Squirtle
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">                  
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Tiny Turtle</h3>
+               <h4 class="height">Height: 0.5 m (1′08″)</h4>
+               <h4 class="weight">Weight: 9.0 kg (19.8 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/squirtle" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/pikachu" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/pikachu" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Pikachu
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://www.pngkit.com/png/full/8-80892_pokemon-electric-type-stickers-by-cat-games-inc.png"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Mouse Pokemon</h3>
+               <h4 class="height">Height: 0.4 m (1′04″)</h4>
+               <h4 class="weight">Weight: 6.0 kg (13.2 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/pikachu" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/clefairy" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/clefairy.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/clefairy" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Clefairy
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://pm1.aminoapps.com/6343/61e7e9385472d4770546a69b7498f9784455c8b6_hq.jpg"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Fairy Pokemon</h3>
+               <h4 class="height">Height: 0.6 m (2′00″)</h4>
+               <h4 class="weight">Weight: 7.5 kg (16.5 lbs) kg</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/clefairy" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/bulbasaur.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Bulbasaur
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://cdn.chaoscards.co.uk/uploads/prod_img/2_176677_e.png?v=-62169983925"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+               <div class="type-sub">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Pok%C3%A9mon_Poison_Type_Icon.svg/768px-Pok%C3%A9mon_Poison_Type_Icon.svg.png?20200511082025"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">                  
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Seed Pokemon</h3>
+               <h4 class="height">Height: 0.7 m (2′04″)</h4>
+               <h4 class="weight">Weight: 6.9 kg (15.2 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/bulbasaur" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/charmander" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/charmander.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/charmander" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Charmander
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://www.giantbomb.com/a/uploads/scale_small/16/164924/3083931-8746743194-flat%2C.jpg"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Lizard Pokemon</h3>
+               <h4 class="height">Height:	0.6 m (2′00″)
+                 </h4>
+               <h4 class="weight"> Weight: 8.5 kg (18.7 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/charmander" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/squirtle" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/squirtle.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/squirtle" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Squirtle
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Pok%C3%A9mon_Water_Type_Icon.svg"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">                  
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Tiny Turtle</h3>
+               <h4 class="height">Height: 0.5 m (1′08″)</h4>
+               <h4 class="weight">Weight: 9.0 kg (19.8 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/squirtle" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/pikachu" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/pikachu.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/pikachu" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Pikachu
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://www.pngkit.com/png/full/8-80892_pokemon-electric-type-stickers-by-cat-games-inc.png"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Mouse Pokemon</h3>
+               <h4 class="height">Height: 0.4 m (1′04″)</h4>
+               <h4 class="weight">Weight: 6.0 kg (13.2 lbs)</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/pikachu" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+          <div class = "card">
+           <a href="https://pokemondb.net/pokedex/clefairy" target="_blank" class="image">
+             <img src="https://img.pokemondb.net/artwork/large/clefairy.jpg" 
+             alt="pokemon image" 
+             class="card-img">
+           </a>
+
+           <div class="card-content">
+             <a href="https://pokemondb.net/pokedex/clefairy" target="_blank" class="name">                 
+               <button class="pokemon-name">
+                 Clefairy
+               </button>
+             </a>
+             <div class="type">
+               <div class="type-sub">
+                 <img src="https://pm1.aminoapps.com/6343/61e7e9385472d4770546a69b7498f9784455c8b6_hq.jpg"
+                   alt="Pokemon type" 
+                   class="pokemon-type-avt">
+               </div>
+
+             </div>
+             <div class="pokemon-inf">
+               <h3 class="species">Species: Fairy Pokemon</h3>
+               <h4 class="height">Height: 0.6 m (2′00″)</h4>
+               <h4 class="weight">Weight: 7.5 kg (16.5 lbs) kg</h4>
+             </div>
+           </div>
+           <div class="state-more-inf">
+             <p>
+               Click <a href="https://pokemondb.net/pokedex/clefairy" target="_blank">here</a> or image or name for more information
+             </p>
+           </div>
+         </div>
+          
+
+        </div>   
+    </body>
+</html>
